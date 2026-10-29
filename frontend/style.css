@@ -1,0 +1,188 @@
+body{
+    background-color:rgba(177, 177, 177, 0.393);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 50px;
+}
+
+
+.auth-card {
+    background-color: rgb(214, 211, 207);
+    width: 300px;
+    padding: 40px;
+    border: 1px solid #c3b3b3;
+    border-radius: 8px;
+}
+.ri-arrow-right-line{
+    color:black;
+}
+ a{
+    color: #000;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: none;
+ }
+ a:hover{
+    color: rgb(211, 62, 62);
+ }
+.auth-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.auth-form-step{
+    font-size: 13px;
+}
+#loginBtn:hover{
+    background-color: rgb(145, 133, 120);
+}
+#togglePasswordBtn{
+    background-color:0;
+    border-radius: 35px;
+    width: none;
+    border: none;
+    text-decoration: none;
+    margin:0;
+    padding: 5px 5px 4px 6px;
+    
+}
+#registerBtn{
+    color: black;
+}
+#registerBtn:hover{
+    background-color: rgb(145, 133, 120);
+}
+.auth-avatar-center {
+    font-size: 35px;
+}
+
+.auth-title {
+    margin-bottom: 8px;
+}
+
+.auth-subtitle {
+    color: #555;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-control {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: 1px solid #777;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color:rgba(177, 177, 177, 0.393);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.auth-subtitle button {
+    background: none;
+    border: none;
+    color: rgb(223, 223, 172);
+    padding: 3px;
+}
+
+.auth-error-message {
+    color: crimson;
+    margin-bottom: 10px;
+}
+
+.auth-success-message {
+    color: green;
+}
+#taskBtn{
+    border: none;
+    border-radius: 20px;
+    padding: 5.5px;
+    padding-inline: 8px;
+    background-color: rgb(200, 202, 148);
+    color: rgb(10, 10, 10);
+    font-size: 12px;
+
+}
+#taskInput{
+    padding: 10px;
+    height: 10px;
+    width: 500px;
+    border-radius: 25px;
+    border: none;
+    background-color:whitesmoke;
+    margin-right: 10px;
+}
+#container{
+    background-color: bisque;
+    width: 50%;
+    height:60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn{
+  color:rgb(147, 0, 29);
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  background-color: #f8aaaa;
+  padding: 4px 14px;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+ul{
+  list-style: none;
+  margin-top: 20px; 
+  padding: 0;
+}
+.task-text{
+    flex: 1;
+}
+.task-text.completed{
+    text-decoration: line-through;
+}
+li{
+    margin:10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+li input[type="checkbox"]{
+    margin:0;
+}
+.task-text.completed{
+    text-decoration: line-through;
+}
+
+

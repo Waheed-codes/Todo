@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Todo Application -->
+    <div id="todo-container" class="hidden">
+        <div id="header">
+            <h1>To-do-list</h1>
+        </div>
+
+        <!-- Task Input -->
+        <div id="input-section">
+            <input type="text" id="taskInput" placeholder="Add a task with min 3 alphabets" />
+            <button type="button" id="taskBtn" onclick="addTask()">Add Task</button>
+        </div>
+        <h2>Task List</h2>
+
+        <ul id="list-container"></ul>
+
+        <!-- Task Counters -->
+        <div class="counter-container">
+            <div id="task-counters">
+                Completed:
+                <span id="completed-counter">0</span>
+                | Incomplete:
+                <span id="uncompleted-counter">0</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

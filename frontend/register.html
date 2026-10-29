@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Register Screen -->
+  <div id="registerScreen" class="screen">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="auth-avatar-center">
+          <i class="ri-user-add-line"></i>
+        </div>
+
+        <h2 class="auth-title">Create Account</h2>
+
+        <p class="auth-subtitle">Create an account to manage your tasks.</p>
+      </div>
+
+      <form id="registerForm" class="auth-form-step">
+        <div class="form-group">
+          <label for="registerEmail">Email Address</label>
+
+          <div class="input-with-icon">
+            <i class="ri-mail-line"></i>
+
+            <input type="email" id="registerEmail" name="email" class="form-control" placeholder="Enter your email"
+              autocomplete="email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="registerPassword">Password</label>
+
+          <div class="input-with-icon">
+            <i class="ri-lock-line"></i>
+
+            <input type="password" id="registerPassword" name="password" class="form-control"
+              placeholder="Create a password" autocomplete="new-password" required />
+          </div>
+        </div>
+
+        <div id="registerError" class="auth-error-message hidden" role="alert"></div>
+
+        <div id="registerSuccess" class="auth-success-message hidden" role="status"></div>
+
+        <button type="submit" class="btn btn-primary btn-block auth-submit-btn" id="registerBtn">
+          <span>Register</span>
+          <i class="ri-arrow-right-line"></i>
+        </button>
+      </form>
+
+      <p class="auth-subtitle">
+        Already have an account?
+        <button type="button" id="showLoginBtn">
+          <a href="index.html">Sign In</a> 
+        </button>
+      </p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
