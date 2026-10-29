@@ -220,3 +220,18 @@ if (registerForm) {
     }
   });
 }
+
+//Password visibility toggle button function
+
+function togglePassword() {
+    const passwordInput = document.getElementById("loginPassword");
+    const toggleIcon = document.getElementById("togglePasswordIcon");
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleIcon.className = "ri-eye-off-line";
+    } else {
+        passwordInput.type = "password";
+        toggleIcon.className = "ri-eye-line";
+    }
+}
